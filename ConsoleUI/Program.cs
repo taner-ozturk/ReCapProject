@@ -19,15 +19,21 @@ namespace ConsoleUI
             //    Console.WriteLine("Price: "+ car.DailyPrice);
             //    Console.WriteLine("Description: "+ car.Description);
             //}
-            //foreach (var car in carManager.GetAllByBrandId(1))
+            //foreach (var car in carManager.GetCarsByBrandId(1))
             //{
             //    Console.WriteLine(car.CarId);
 
             //}
-            foreach (var car in carManager.GetByDailyPrice(100,500))
+            //foreach (var car in carManager.GetByDailyPrice(100,500))
+            //{
+            //    Console.WriteLine(car.CarId);
+            //}
+            foreach (var car in carManager.GetCarsByColorId(3))
             {
                 Console.WriteLine(car.CarId);
             }
+
+
 
         }
     }
